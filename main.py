@@ -88,7 +88,7 @@ def give_me_text(message: Message, src):
     else:
         chat_id = message.chat.id
         dest = message.text
-        msg = bot.send_message(chat_id, 'Napishite teks ili slova ?')
+        msg = bot.send_message(chat_id, 'Napishite teks ili slova ili foto?')
         bot.register_next_step_handler(msg, translate, src, dest)
 
 
