@@ -77,7 +77,7 @@ def second_language(message: Message):
     else:
         chat_id = message.chat.id
         src = message.text
-        msg = bot.send_message(chat_id, f'Viberita na kakaoy yazik xotite perevesti ?',
+        msg = bot.send_message(chat_id, f'Viberita na kakaoy yazik xotite perevesti dlya testov?',
                          reply_markup=generate_language())
         bot.register_next_step_handler(msg, give_me_text, src)
 
